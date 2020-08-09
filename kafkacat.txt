@@ -1,0 +1,3 @@
+docker run -it --network="backend_default" --name="consumer" confluentinc/cp-kafkacat bash
+
+kafkacat -b localhost:19092 -t userEvent
